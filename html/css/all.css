@@ -46,7 +46,6 @@ sup{ vertical-align: super; font-size: smaller; }
 pre, blockquote, textarea{
 	white-space: pre;
 	white-space: pre-wrap;
-	white-space: pre-line;
 	word-wrap: break-word;
 }
 
@@ -74,14 +73,14 @@ textarea{ overflow: auto; }
 .ie-7 img{ -ms-interpolation-mode: bicubic; }
 
 .clear{ clear:both; display: block; height: 0px; overflow: hidden; }
-.clearfix{ zoom: 1; }
-.clearfix:after{ visibility: hidden; display: block; font-size: 0; content: " ";  clear: both; height: 0px; }
-* html .clearfix{ height: 1%; }
+.clearfix:before, .clearfix:after{ content:""; display:table; }
+.clearfix:after{ clear:both; }
+.clearfix{ zoom:1; }
 
 .left{ float: left; }
 .right{ float: right; }
 .hide{ display: none; }
- 
+
 /* TIPOGRAFIA */
 /* ----------------------------------------- */
 body{
@@ -165,7 +164,6 @@ table tr td{
 	padding: 10px;
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
-	-khtml-border-radius: 3px;
 	border-radius: 3px;
 }
 .verde{
@@ -221,7 +219,6 @@ blockquote{
 	padding: 10px 20px 0px;
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
-	-khtml-border-radius: 3px;
 	border-radius: 3px;
 }
 iframe{
@@ -272,7 +269,6 @@ input, textarea{
 	width: 280px;
 	-moz-border-radius: 1px;
 	-webkit-border-radius: 1px;
-	-khtml-border-radius: 1px;
 	border-radius: 1px;
 }
 input[type="radio"], input[type="checkbox"]{
@@ -295,7 +291,6 @@ input.submit, input[type="submit"]{
 	text-shadow: 1px 1px 1px #000;
 	-moz-border-radius: 2px;
 	-webkit-border-radius: 2px;
-	-khtml-border-radius: 2px;
 	border-radius: 2px;
 }
 
