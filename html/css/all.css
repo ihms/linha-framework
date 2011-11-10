@@ -16,32 +16,56 @@ samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form
 label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas,
 details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time,
 mark, audio, video, a{
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	font-size: 100%;
-	vertical-align: baseline;
 	background: transparent;
+	border: 0;
+	font-size: 100%;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
 }
-article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary{ display: block; }
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup,
+menu, nav, section, summary{ display: block; }
+
 nav ul, nav ol{ list-style: none; }
 
 blockquote, q{ quotes: none; }
-blockquote:before, blockquote:after, q:before, q:after{ content: ''; content: none; }
+blockquote:before, blockquote:after, q:before, q:after{
+	content: '';
+	content: none;
+}
 
-html{ overflow-y: scroll; }
-body{ line-height: 1; }
-body, html{ height: 100%; min-height: 100%; }
+html{
+	line-height: 1;
+	overflow-y: scroll;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+body, html{
+	height: 100%;
+	min-height: 100%;
+}
 
-abbr[title], dfn[title]{ border-bottom: 1px dotted #000; cursor: help; }
+abbr[title], dfn[title]{
+	border-bottom: 1px dotted #000;
+	cursor: help;
+}
 
-table{ border-collapse: collapse; border-spacing: 0; }
+table{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
-td, td img{ vertical-align: top; } 
+td, td img{ vertical-align: top; }
 
-sub{ vertical-align: sub; font-size: smaller; }
-sup{ vertical-align: super; font-size: smaller; }
+sub{
+	vertical-align: sub;
+	font-size: smaller;
+}
+sup{
+	vertical-align: super;
+	font-size: smaller;
+}
 
 pre, blockquote, textarea{
 	white-space: pre;
@@ -59,7 +83,10 @@ input[type="checkbox"]{ vertical-align: baseline; }
 
 button, input, select, textarea{ margin: 0; }
 
-button{ width: auto; overflow: visible; }
+button{
+	width: auto;
+	overflow: visible;
+}
 
 label, input[type="button"], input[type="submit"], button{ cursor: pointer; }
 
@@ -67,19 +94,43 @@ textarea{ overflow: auto; }
 
 :focus{ outline: 0; }
 
-::-moz-selection{ background: #535353; color:#FFF; text-shadow: none; }
-::selection{ background:#535353; color:#FFF; text-shadow: none; }
+::-moz-selection{
+	background: #535353;
+	color: #FFF;
+	text-shadow: none;
+}
+::selection{
+	background: #535353;
+	color: #FFF;
+	text-shadow: none;
+}
 
-.ie-7 img{ -ms-interpolation-mode: bicubic; }
+img, object, embed, table, iframe{ max-width: 100%; }
+img{ -ms-interpolation-mode: bicubic; }
 
-.clear{ clear:both; display: block; height: 0px; overflow: hidden; }
-.clearfix:before, .clearfix:after{ content:""; display:table; }
-.clearfix:after{ clear:both; }
-.clearfix{ zoom:1; }
+.clear{
+	clear: both;
+	display: block;
+	height: 0px;
+	overflow: hidden;
+}
+.clearfix:before, .clearfix:after{
+	content: "";
+	display: table;
+}
+.clearfix:after{ clear: both; }
+.clearfix{ zoom: 1; }
 
 .left{ float: left; }
 .right{ float: right; }
 .hide{ display: none; }
+
+.first{ margin-left: 0 !important; }
+.last{ margin-right: 0 !important; }
+.nothing{
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
 
 /* TIPOGRAFIA */
 /* ----------------------------------------- */
@@ -91,7 +142,7 @@ body{
 	line-height: 22px;
 }
 
-/*LINKS*/
+/* LINKS */
 a, a:link{
 	color: #3151A2;
 	text-decoration: none;
@@ -104,7 +155,7 @@ a img{
 	display: block;
 }
 
-/*CABEÇALHOS*/
+/* CABEÇALHOS */
 h1, h2, h3, h4, h5, h6{
 	display: block;
 	line-height: 100%;
@@ -116,18 +167,19 @@ h3{ font-size: 150%; }
 h4{ font-size: 120%; }
 h5, h6{ font-size: 100%; }
 
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{
-	display: inline-block;
-}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{ display: inline-block; }
 
-/*TEXTOS*/
-p,ul,ol{ margin-bottom: 15px; }
+/* TEXTOS */
+p, ul, ol{ margin-bottom: 15px; }
 strong, b{ font-weight: bold; }
 cite, em, dfn, i{ font-style: italic; }
 del{ text-decoration: line-through; }
-input, textarea, select, button, option{ font-size: 100%; font-family: Arial, Helvetica, sans-serif; }
+input, textarea, select, button, option{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+}
 
-/*LISTAS*/
+/* LISTAS */
 ol, ul{ padding-left: 35px; }
 ul{ list-style-type: disc; }
 ol{ list-style-type: decimal; }
@@ -136,7 +188,7 @@ dl{ margin: 0 0 1.5em 0; }
 dl dt{ font-weight: bold; }
 dd{ margin-left: 1.5em; }
 
-/*TABELAS*/
+/* TABELAS */
 table{
 	margin-bottom: 10px;
 }
@@ -151,12 +203,12 @@ table tr td{
 	padding: 5px 10px;
 }
 
-/*OUTROS*/
+/* OUTROS */
 hr{
-	display: block;
-	height: 1px;
 	border: 0;
 	border-top: 1px solid #CCC;
+	display: block;
+	height: 1px;
 	margin: 1em 0;
 	padding: 0;
 }
@@ -174,24 +226,24 @@ mark{
 blockquote{
 	background: #F2F2F2;
 	border: 1px solid #CCC;
-	margin-bottom: 10px;
-	padding: 10px 20px 0px;
+	border-radius: 3px;
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
-	border-radius: 3px;
+	margin-bottom: 10px;
+	padding: 10px 20px 0px;
 }
 
-/*ALERTAS*/
+/* ALERTAS */
 .alert{
 	background: #EDEDED;
 	border: 1px solid #C0C0C0;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
 	color: #333;
 	display: block;
 	margin: 5px 0;
 	padding: 10px;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-	border-radius: 3px;
 }
 .green{
 	background-color: #E9F9E5;
@@ -216,7 +268,7 @@ blockquote{
 	border-color: #F00;
 }
 
-/*HELPERS*/
+/* HELPERS */
 .align-left{ text-align: left; }
 .align-right{ text-align: right; }
 .align-center{ text-align: center; }
@@ -250,11 +302,15 @@ input, textarea{
 	background: #FFF url(../img/input.png) repeat-x top;
 	border: 1px solid;
 	border-color: #BBB #DDD #DDD #BBB;
-	padding: 8px;
-	width: 280px;
+	border-radius: 1px;
 	-moz-border-radius: 1px;
 	-webkit-border-radius: 1px;
-	border-radius: 1px;
+	padding: 8px;
+	width: 280px;
+}
+textarea{
+	min-height: 100px;
+	min-width: 200px;
 }
 input[type="radio"], input[type="checkbox"]{
 	background: none;
@@ -265,17 +321,17 @@ input[type="radio"], input[type="checkbox"]{
 input[type="submit"]{
 	background: #434343;
 	border: 1px solid #222;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
 	color: #FFF;
 	cursor: pointer;
 	display: inline-block;
 	height: 30px;
 	overflow: visible;
 	padding: 6px 10px;
-	width: auto;
 	text-shadow: 1px 1px 1px #000;
-	-moz-border-radius: 2px;
-	-webkit-border-radius: 2px;
-	border-radius: 2px;
+	width: auto;
 }
 
 select{
@@ -307,7 +363,7 @@ textarea:focus{
 	margin-right: 10px;
 }
 
-/*12 COLUNAS*/
+/* 12 COLUNAS */
 .grid-12 .width1{ width: 60px; }
 .grid-12 .width2{ width: 140px; }
 .grid-12 .width3{ width: 220px; }
@@ -321,7 +377,7 @@ textarea:focus{
 .grid-12 .width11{ width: 860px; }
 .grid-12 .width12{ width: 940px; }
 
-/*16 COLUNAS*/
+/* 16 COLUNAS */
 .grid-16 .width1{ width: 40px; }
 .grid-16 .width2{ width: 100px; }
 .grid-16 .width3{ width: 160px; }
@@ -339,7 +395,7 @@ textarea:focus{
 .grid-16 .width15{ width: 880px; }
 .grid-16 .width16{ width: 940px; }
 
-/*24 COLUNAS*/
+/* 24 COLUNAS */
 .grid-24 .column{ margin-left: 5px; margin-right: 5px; }
 .grid-24 .width1{ width: 30px; }
 .grid-24 .width2{ width: 70px; }
@@ -366,42 +422,26 @@ textarea:focus{
 .grid-24 .width23{ width: 910px; }
 .grid-24 .width24{ width: 950px; }
 
-.grid-12 .first, .grid-16 .first, .grid-24 .first{ margin-left: 0; }
-.grid-12 .last, .grid-16 .last, .grid-24 .last{ margin-right: 0; }
-.grid-12 .nothing, .grid-16 .nothing, .grid-24 .nothing{ margin-left: 0; margin-right: 0; }
-
-/* GRID RESPONSIVE 
-   Basicamente este grid se adpta a resolução do navegador, é uma alternativa a @media max-width - CSS3
+/* GRID RESPONSIVE
+   Basicamente este grid se adpta a resolução do navegador, usando @media max-width - CSS3
    Colunas de width maior do que o permitido, serão convertidas para o width máximo, se adptando a resolução
-   
+
    Você também pode usar classes hide de acordo com a resolução
-   
+
    SCREEN    AREA   "LIVRE"   COLUNAS
-   320       280    260       4      
-   480       420    400       6      
-   620       560    540       8      
-   768       700    680       10     
-   1024      980    960       14     
-   1280      1190   1170      17
-   1440      1330   1310      19     
+   480       280    260       4
+   620       420    400       6
+   768       560    540       8
+   1024      700    680       10
+   1280      980    960       14
+   1440      1190   1170      17
+   1680      1330   1310      19
 ----------------------------------------- */
 .grid-responsive{
 	display: block;
 	margin: 0 auto;
 	max-width: 1330px;
 	overflow: hidden;
-}
-.grid-responsive .column{
-	display: inline;
-	float: left;
-	margin-left: 10px;
-	margin-right: 10px;
-	max-width: 1310px;
-}
-.grid-responsive .column img,
-.grid-responsive .column object,
-.grid-responsive .column embed{
-	max-width: 100%;
 }
 
 .grid-responsive .width1{ width: 50px; }
@@ -424,33 +464,48 @@ textarea:focus{
 .grid-responsive .width18{ width: 1240px; }
 .grid-responsive .width19{ width: 1310px; }
 
-/*Screen Resolution*/
-.screen-320 .grid-responsive{ width: 280px; }
-.screen-320 .grid-responsive .column{ max-width: 260px; }
-.screen-320 .grid-responsive .screen-320-hide{ display: none; }
+/* MEDIA QUERIES */
+@media screen and (max-width: 480px){
+	.grid-responsive{ width: 280px; }
+	.grid-responsive .column{ max-width: 260px; }
+	.grid-responsive .screen-480-hide{ display: none !important; }
+}
 
-.screen-480 .grid-responsive{ width: 420px; }
-.screen-480 .grid-responsive .column{ max-width: 400px; }
-.screen-480 .grid-responsive .screen-480-hide{ display: none; }
+@media screen and (min-width: 481px) and (max-width: 640px){
+	.grid-responsive{ width: 420px; }
+	.grid-responsive .column{ max-width: 400px; }
+	.grid-responsive .screen-640-hide{ display: none !important; }
+}
 
-.screen-640 .grid-responsive{ width: 560px; }
-.screen-640 .grid-responsive .column{ max-width: 540px; }
-.screen-640 .grid-responsive .screen-640-hide{ display: none; }
+@media screen and (min-width: 645px) and (max-width: 768px){
+	.grid-responsive{ width: 560px; }
+	.grid-responsive .column{ max-width: 540px; }
+	.grid-responsive .screen-768-hide{ display: none !important; }
+}
 
-.screen-768 .grid-responsive{ width: 700px; }
-.screen-768 .grid-responsive .column{ max-width: 680px; }
-.screen-768 .grid-responsive .screen-768-hide{ display: none; }
+@media screen and (min-width: 769px) and (max-width: 1024px){
+	.grid-responsive{ width: 700px; }
+	.grid-responsive .column{ max-width: 680px; }
+	.grid-responsive .screen-1024-hide{ display: none !important; }
+}
 
-.screen-1024 .grid-responsive{ width: 980px; }
-.screen-1024 .grid-responsive .column{ max-width: 960px;}
-.screen-1024 .grid-responsive .screen-1024-hide{ display: none; }
+@media screen and (min-width: 1025px) and (max-width: 1280px){
+	.grid-responsive{ width: 980px; }
+	.grid-responsive .column{ max-width: 960px; }
+	.grid-responsive .screen-1280-hide{ display: none !important; }
+}
 
-.screen-1280 .grid-responsive{ width: 1190px; }
-.screen-1280 .grid-responsive .column{ max-width: 1170px;}
-.screen-1280 .grid-responsive .screen-1280-hide{ display: none; }
+@media screen and (min-width: 1281px) and (max-width: 1440px){
+	.grid-responsive{ width: 1190px; }
+	.grid-responsive .column{ max-width: 1170px;}
+	.grid-responsive .screen-1440-hide{ display: none !important; }
+}
 
-.screen-1440 .grid-responsive{ width: 1330px; }
-.screen-1440 .grid-responsive .screen-1440-hide{ display: none; }
+@media screen and (min-width: 1441px){
+	.grid-responsive{ width: 1330px; }
+	.grid-responsive .column{ max-width: 1310px;}
+	.grid-responsive .screen-1680-hide{ display: none !important; }
+}
 
 /* GRID HELPERS */
 /* ----------------------------------------- */
