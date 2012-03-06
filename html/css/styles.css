@@ -169,15 +169,15 @@ img {
 }
 
 .left {
-  float: left;
+  float: left !important;
 }
 
 .right {
-  float: right;
+  float: right !important;
 }
 
 .hide {
-  display: none;
+  display: none !important;
 }
 
 .first {
