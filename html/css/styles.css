@@ -197,7 +197,7 @@ img {
 /* ----------------------------------------- */
 body {
   background: #FFF;
-  color: #222;
+  color: #444;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 22px;
@@ -427,16 +427,23 @@ label {
 }
 
 input, textarea {
-  background: white url(../img/input.png) repeat-x top;
+  background: #FFF;
   border: 1px solid;
   border-color: #BBB #DDD #DDD #BBB;
-  padding: 8px;
-  width: 280px;
-  -webkit-border-radius: 1px;
-  -moz-border-radius: 1px;
-  -ms-border-radius: 1px;
-  -o-border-radius: 1px;
-  border-radius: 1px;
+  padding: 10px;
+  width: 230px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+input:not([type="submit"]), textarea:not([type="submit"]) {
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 input:focus, textarea:focus {
   background-color: #FCFCFC;
@@ -455,11 +462,12 @@ input[type="submit"] {
   color: #FFF;
   cursor: pointer;
   display: inline-block;
-  height: 30px;
+  height: 37px;
   overflow: visible;
-  padding: 6px 10px;
+  padding: 9px 15px 10px;
   text-shadow: 1px 1px 1px #000;
   width: auto;
+  -webkit-appearance: none;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
@@ -1280,7 +1288,7 @@ option {
   /* VALIDA */
   input.error, textarea.error, select.error {
     background-color: #ffcfcf;
-    border: 1px solid #d7162b;
+    border-color: #d7162b;
   }
   input.error:focus, textarea.error:focus, select.error:focus {
     background-color: #fdeaed;
