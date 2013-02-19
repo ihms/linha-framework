@@ -31,14 +31,14 @@ Não temos exatamente tudo feito, alguns pontos ficam por sua decisão. Abaixo a
  * Carregue JS dinamicamente, usando um plugin para lazy loading (YepNope)
  * Compile uma versão mais exclusiva do Modernizr pelo site do desenvolvedor
  * Use o build incluso no framework para criar versões minifield do seu código
- * Se o site não tiver suporte nativo para o IE6, avise os usuários usando Adeus IE6 - <https://github.com/mateus007/adeus-ie6>
+ * Se o site não tiver suporte nativo para o IE6 / IE7, avise os usuários usando Adeus IE6 - <https://github.com/mateus007/adeus-ie6>
  * Aprenda um pouco de SEO - <http://googlewebmastercentral.blogspot.com/2008/11/googles-seo-starter-guide.html>
  * Alterar o código fonte não é proibido :P
  * Contribua!
 
 CHANGELOG
 =====================
-#### 1.3 - XX de XXXXXXXX de 2012
+#### 1.3 - XX de XXXXXXXX de 2013
 
  * Código agora está no padrão internacional - INGLÊS (Código, não comentários e textos...)
  * HTML migrado para HTML5 (não vá confundir com as funcionalidades do HTML5)
@@ -47,9 +47,10 @@ CHANGELOG
  * Otimização CSS e JS - Veja log plugins
  * Remoção do $.pluginX, em apoio a $.fn.pluginX
  * Removido plugin Linha Focuss (o HTML5 oferece o atributo "placeholder" como alternativa)
+ * Removido plugin Linha Nav (Fazer o mesmo com CSS é muito simples)
  * Novo build para JS - Tuild, feito em NodeJS
  * Adicionado plugin Modernizr
- * Atualização jQuery para V. 1.8.2
+ * Atualização jQuery para V. 1.9.0
  * Removido jQuery via CDN - por vezes fica muito lento o carregamento do site, além de impedir o desenvolvimento offline
  * Arquivos CSS simplificados em 1 arquivo (anteriormente eram 7)
  * Estilos CSS a lá OOCSS, gerenciados com Sass
